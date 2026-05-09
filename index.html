@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>McDonald's | Order Now | Delivery & Drive-Thru Available</title>
+  <meta name="description" content="Browse our menu, order online, and deliver or pick up near you. Fast, fresh, and delicious. Download the app for exclusive deals.">
+  <meta property="og:title" content="McDonald's | Order Now">
+  <meta property="og:description" content="Browse our menu, order online, and deliver or pick up near you.">
+  <meta property="og:type" content="website">
+  <meta name="theme-color" content="#DC143C">
+  
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FastFoodRestaurant",
+      "name": "McDonald's",
+      "image": "logo.png",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "2400000"
+      }
+    }
+  </script>
+</head>
+<body>
+  <!-- Page Loader -->
+  <div id="page-loader" class="loader-overlay">
+    <div style="font-size:48px; margin-bottom:16px;">🍔</div>
+    <h2 style="margin:0;font-family:'Rubik', sans-serif;">McDonald's</h2>
+    <div style="margin-top:16px;width:40px;height:40px;border:4px solid white;border-top-color:#FFC72C;border-radius:50%;animation:spin 1s linear infinite;"></div>
+    <style>@keyframes spin {100%{transform:rotate(360deg)}}</style>
+  </div>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <div class="container marquee-container" style="display:flex;">
+      <div class="marquee">
+        🍔 LIMITED TIME: Get 2 Big Macs for £5.99 &nbsp;·&nbsp; 🚗 Drive-Thru & Delivery Available &nbsp;·&nbsp; 🔔 Download the App for Exclusive Deals &nbsp;·&nbsp; 💚 Organic, Free-Range options now available
+      </div>
+      <a href="#" class="announcement-link">View Details &rarr;</a>
+    </div>
+  </div>
+
+  <!-- Main Nav -->
+  <nav class="main-nav">
+    <div class="container nav-container">
+      <button class="mobile-menu-btn nav-icon" aria-label="Open menu">
+        <div class="hamburger"><span></span><span></span><span></span></div>
+      </button>
+      <a href="#" class="nav-brand">
+        <!-- Minimal M SVG abstraction -->
+        <svg class="nav-logo-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+          <path d="M 20 80 Q 20 20 50 20 Q 80 20 80 80" fill="transparent" stroke="var(--golden-yellow)" stroke-width="12" stroke-linecap="round"/>
+          <path d="M 50 20 Q 50 50 50 50" fill="transparent" stroke="var(--primary-red)" stroke-width="12" stroke-linecap="round"/>
+        </svg>
+        McDonald's
+      </a>
+      <div class="nav-links">
+        <a href="#menu">MENU</a>
+        <a href="#order">ORDER NOW</a>
+        <a href="#locations">LOCATIONS</a>
+        <a href="#offers">OFFERS</a>
+        <a href="#nutrition">NUTRITION</a>
+      </div>
+      <div class="nav-actions">
+        <div class="nav-search-container" id="nav-search-wrapper">
+          <div class="search-input-wrapper">
+            <span class="search-icon">🔍</span>
+            <input type="text" id="nav-search-input" placeholder="Search menu..." autocomplete="off">
+          </div>
+          <div class="search-results-dropdown" id="search-results-dropdown" style="display:none;"></div>
+        </div>
+        <button class="nav-icon" aria-label="Account">👤</button>
+        <button class="nav-icon" aria-label="Cart" style="position:relative;">
+          🛒 <span class="cart-badge">0</span>
+        </button>
+        <a href="#menu" class="btn btn--primary" style="padding: 8px 16px; font-size:14px; margin-left: 8px;">Order Now</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Sidebar Overlay -->
+  <div class="mobile-nav-overlay"></div>
+  <div class="mobile-nav-sidebar">
+    <button class="mobile-menu-btn close" style="color:white;text-align:right;font-size:24px;margin-bottom:20px;">✕</button>
+    <div style="background:var(--bg-light-grey);color:var(--text-black);padding:16px;border-radius:8px;margin-bottom:24px;">
+      <p style="font-weight:600;font-size:14px;">🔍 Find Nearby McDonald's</p>
+      <button class="btn btn--outline" style="width:100%;margin-top:8px;">Allow Location</button>
+    </div>
+    <a href="#menu">Menu</a>
+    <a href="#order">Order Now</a>
+    <a href="#offers">Offers</a>
+    <a href="#locations">Locations</a>
+    <div style="margin-top:auto;">
+      <a href="#menu" class="btn btn--yellow" style="width:100%;text-align:center;">Order Now</a>
+    </div>
+  </div>
+
+  <!-- Hero Carousel -->
+  <section class="hero" id="home">
+    <div class="hero-carousel">
+      <!-- Slide 1 -->
+      <div class="hero-slide slide-split active">
+        <div class="slide-content">
+          <div class="badge badge--orange slide-badge countdown-timer" data-seconds="223200">⏱️ Offer ends in 2d 14h</div>
+          <h2 style="font-weight:900;">2 Big Macs for £5.99</h2>
+          <p>Limited time only. In-store and online.</p>
+          <div><a href="#order" class="btn btn--yellow" style="font-size:20px;">Order Now &rarr;</a></div>
+          <p style="font-size:13px; opacity:0.8; margin-top:16px;">&check; Available at all McDonald's. One per order.</p>
+        </div>
+        <div class="slide-image">🍔<br/><span style="font-size:24px;color:black;">BIG MAC</span></div>
+      </div>
+      <!-- Slide 2 -->
+      <div class="hero-slide slide-gradient">
+        <div class="slide-content" style="color:var(--primary-red);">
+          <h2>Download the App. Get Exclusive Deals.</h2>
+          <ul style="list-style:none;padding:0;margin-bottom:24px;font-size:18px;">
+            <li>&check; Exclusive daily deals</li>
+            <li>&check; Fast ordering</li>
+            <li>&check; Loyalty rewards</li>
+          </ul>
+          <div><a href="#" class="btn btn--yellow" style="color:var(--text-black);">Download Now <span style="font-size:12px;">iOS | Android</span></a></div>
+        </div>
+        <div class="phone-mockup"></div>
+      </div>
+      <!-- Slide 3 -->
+      <div class="hero-slide slide-gradient warm">
+        <div class="slide-content" style="align-items:center;text-align:center;">
+          <h2>Hungry? We're 2 Minutes Away.</h2>
+          <p style="color:var(--text-black);">Choose delivery, drive-thru, or pick up in-store.</p>
+          <div style="display:flex;gap:16px;margin-bottom:24px;">
+            <div class="card" style="padding:16px;font-weight:600;"><span style="font-size:24px;">🚗</span><br/>Drive-Thru<br/><span style="font-size:12px;color:var(--text-muted)">5 min</span></div>
+            <div class="card" style="padding:16px;font-weight:600;"><span style="font-size:24px;">🚲</span><br/>Delivery<br/><span style="font-size:12px;color:var(--text-muted)">20-30 min</span></div>
+            <div class="card" style="padding:16px;font-weight:600;"><span style="font-size:24px;">🏪</span><br/>Pick Up<br/><span style="font-size:12px;color:var(--text-muted)">3 min</span></div>
+          </div>
+          <div><a href="#locations" class="btn btn--primary">Find a Location &rarr;</a></div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="carousel-arrows">
+      <button class="carousel-arrow" id="carousel-prev">❮</button>
+      <button class="carousel-arrow" id="carousel-next">❯</button>
+    </div>
+    <div class="carousel-nav">
+      <div class="carousel-dot active"></div>
+      <div class="carousel-dot"></div>
+      <div class="carousel-dot"></div>
+    </div>
+    
+    <div class="quick-menu-shortcuts">
+      <a href="#burgers" class="btn btn--secondary" style="background:white;">🍔 Burgers</a>
+      <a href="#sides" class="btn btn--secondary" style="background:white;">🍟 Sides</a>
+      <a href="#drinks" class="btn btn--secondary" style="background:white;">🥤 Drinks</a>
+    </div>
+  </section>
+
+  <!-- Quick Access & Promo Container -->
+  <div class="container" style="position:relative;">
+    <section class="quick-access-section" id="quick-access">
+      <div class="location-panel">
+        <h3 style="font-size:20px;margin-bottom:16px;">🔍 Find a McDonald's Near You</h3>
+        <div style="display:flex;gap:8px;">
+          <input type="text" class="input-field" placeholder="Postcode or Address" />
+          <button class="btn btn--primary">Search</button>
+        </div>
+      </div>
+      <div class="loyalty-teaser border-left" style="border-left: 1px solid #eee;">
+        <h3 style="font-size:20px;margin-bottom:8px;">Join MyMcDonald's Rewards</h3>
+        <p style="font-size:14px;color:var(--text-muted);margin-bottom:16px;">Earn points on every order. Unlock exclusive offers.</p>
+        <a href="#loyalty" class="btn btn--yellow" style="padding:12px 24px;">Join Free &rarr;</a>
+        <span class="badge badge--green" style="margin-left:16px;">👥 5.2M members</span>
+      </div>
+      <div class="trust-row">
+        <span>&check; Real-time order tracking</span>
+        <span>&check; Hot & fresh guarantee</span>
+        <span>&check; Easy returns</span>
+      </div>
+    </section>
+  </div>
+
+  <!-- Menu Section -->
+  <section class="section-pad menu-section" id="menu">
+    <div class="container" data-animate>
+      <div style="margin-bottom:48px;">
+        <h2 style="font-size:var(--text-3xl);">Our Menu</h2>
+        <p style="color:var(--text-muted);font-size:var(--text-lg);">Fresh ingredients. Great taste. Fast service.</p>
+      </div>
+      
+      <div class="menu-filters">
+        <button class="btn btn--primary">ALL</button>
+        <button class="btn btn--outline">BURGERS</button>
+        <button class="btn btn--outline">CHICKEN</button>
+        <button class="btn btn--outline">SIDES</button>
+        <button class="btn btn--outline">DRINKS</button>
+      </div>
+
+      <div class="menu-grid">
+        <!-- Item 1 -->
+        <div class="card menu-item-card">
+          <div class="menu-item-img">
+            🍔
+            <button class="wishlist-btn">🤍</button>
+            <span class="badge badge--orange" style="position:absolute;bottom:8px;left:8px;">BESTSELLER</span>
+          </div>
+          <div class="menu-item-content">
+            <span class="badge badge--red" style="align-self:flex-start;font-size:10px;">BURGER</span>
+            <h3>Big Mac</h3>
+            <p style="font-size:14px;color:var(--text-muted);">Made with 100% beef patties</p>
+            <p class="price">£4.99</p>
+            <div style="margin-top:auto;">
+              <button class="btn btn--primary" style="width:100%;">Add to Order</button>
+            </div>
+          </div>
+        </div>
+        <!-- Item 2 -->
+        <div class="card menu-item-card">
+          <div class="menu-item-img">🍗</div>
+          <div class="menu-item-content">
+            <span class="badge badge--yellow" style="align-self:flex-start;font-size:10px;">CHICKEN</span>
+            <h3>Chicken McNuggets (6pc)</h3>
+            <p style="font-size:14px;color:var(--text-muted);">Golden, delicious nuggets</p>
+            <p class="price">£3.99</p>
+            <div style="margin-top:auto;"><button class="btn btn--primary" style="width:100%;">Add to Order</button></div>
+          </div>
+        </div>
+        <!-- Item 3 -->
+        <div class="card menu-item-card">
+          <div class="menu-item-img">🍟</div>
+          <div class="menu-item-content">
+            <span class="badge badge--red" style="align-self:flex-start;font-size:10px;">SIDES</span>
+            <h3>French Fries (Medium)</h3>
+            <p style="font-size:14px;color:var(--text-muted);">Golden, crisp, and hot</p>
+            <p class="price">£2.49</p>
+            <div style="margin-top:auto;"><button class="btn btn--primary" style="width:100%;">Add to Order</button></div>
+          </div>
+        </div>
+        <!-- Item 4 -->
+        <div class="card menu-item-card">
+          <div class="menu-item-img">🥤</div>
+          <div class="menu-item-content">
+            <span class="badge badge--action-blue" style="background:#0066CC;color:white;align-self:flex-start;font-size:10px;">DRINKS</span>
+            <h3>Coca-Cola (Medium)</h3>
+            <p style="font-size:14px;color:var(--text-muted);">Refreshing classic cola</p>
+            <p class="price">£2.19</p>
+            <div style="margin-top:auto;"><button class="btn btn--primary" style="width:100%;">Add to Order</button></div>
+          </div>
+        </div>
+      </div>
+      
+      <div style="text-align:center;margin-top:48px;">
+        <button class="btn btn--secondary">Load More Items</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nutrition Section -->
+  <section class="section-pad nutrition-section" id="nutrition">
+    <div class="container" data-animate>
+      <div class="nutrition-card">
+        <h2 style="font-size:var(--text-2xl);">Know What You're Eating</h2>
+        <p style="color:var(--text-muted);font-size:16px;">Full nutrition, allergen, and ingredient information.</p>
+        
+        <div style="margin-top:24px;">
+          <h3 style="font-size:18px;">Big Mac Snapshot</h3>
+          <div class="nutrition-table">
+            <div class="nut-fact"><strong>Calories:</strong> 508 kcal</div>
+            <div class="nut-fact"><strong>Protein:</strong> 26g</div>
+            <div class="nut-fact"><strong>Carbs:</strong> 43g</div>
+            <div class="nut-fact low"><strong>Sugar:</strong> 9g</div>
+          </div>
+          <div class="accordion-header" style="cursor:pointer;color:var(--primary-red);">Full Nutrition Facts <span>+</span></div>
+          <div class="accordion-header" style="cursor:pointer;color:var(--primary-red);">Allergen Info <span>+</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  
+  <!-- Loyalty Section -->
+  <section class="section-pad loyalty-section" id="loyalty">
+    <div class="container loyalty-grid" data-animate>
+      <div style="padding-right:10%;">
+        <h2 style="font-size:var(--text-2xl);color:white;">Join MyMcDonald's Rewards. Earn Points. Unlock Exclusive Deals.</h2>
+        <div style="margin-top:32px;">
+          <div style="display:flex;gap:16px;margin-bottom:24px;">
+            <div style="font-size:32px;">🎁</div>
+            <div><h4 style="font-size:18px;">Points on Every Order</h4><p style="opacity:0.9;">Earn 1 point per £1 spent. Redeem for free items.</p></div>
+          </div>
+          <div style="display:flex;gap:16px;margin-bottom:24px;">
+            <div style="font-size:32px;">🎂</div>
+            <div><h4 style="font-size:18px;">Birthday Bonus</h4><p style="opacity:0.9;">Free birthday treat. Delivered to your email.</p></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <div class="loyalty-form-card">
+          <h3 style="color:var(--primary-red);margin-bottom:16px;">Join Free — No Hidden Fees</h3>
+          <form style="display:flex;flex-direction:column;gap:16px;">
+            <input type="text" class="input-field" placeholder="Your first name">
+            <input type="email" class="input-field" placeholder="Your email address">
+            <label style="display:flex;align-items:center;gap:8px;font-size:14px;"><input type="checkbox"> Email me exclusive offers and latest news</label>
+            <button type="button" class="btn btn--primary" style="width:100%;font-size:18px;">Create My Account</button>
+            <p style="text-align:center;font-size:13px;color:var(--text-muted);">&check; Free to join · Unsubscribe anytime</p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Location/Locator Section -->
+  <section class="section-pad" style="background:var(--bg-white);" id="locations">
+    <div class="container locator-grid" data-animate>
+      <div>
+        <h2 style="font-size:var(--text-2xl);margin-bottom:24px;">Find Your Nearest McDonald's</h2>
+        <div style="display:flex;flex-direction:column;gap:16px;margin-bottom:24px;">
+          <input type="text" class="input-field" placeholder="Search postcode or city">
+          <button class="btn btn--primary">Search Locations</button>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:16px;">
+          <label style="display:flex;align-items:center;gap:8px;"><input type="checkbox" checked> Open Now</label>
+          <label style="display:flex;align-items:center;gap:8px;"><input type="checkbox"> Drive-Thru</label>
+          <label style="display:flex;align-items:center;gap:8px;"><input type="checkbox"> Delivery</label>
+        </div>
+        
+        <div style="margin-top:24px;border-top:1px solid #ddd;padding-top:16px;">
+          <div class="card" style="padding:16px;margin-bottom:16px;">
+            <h4 style="font-size:16px;margin-bottom:4px;">London Eye McDonald's</h4>
+            <p style="color:var(--text-muted);font-size:14px;margin-bottom:8px;">County Hall, SE1 7PB</p>
+            <p style="color:var(--primary-red);font-weight:600;font-size:14px;margin-bottom:8px;">0.4 miles away</p>
+            <p style="font-size:13px;color:var(--text-muted);margin-bottom:12px;">Opens 6:00 AM · Closes 11:00 PM</p>
+            <div style="display:flex;gap:8px;">
+               <button class="btn btn--outline" style="font-size:12px;padding:4px 8px;">Directions</button>
+               <button class="btn btn--yellow" style="font-size:12px;padding:4px 8px;">Order Here</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map-placeholder">
+        <p style="font-size:24px;color:var(--text-muted);">🗺️ Interactive Map (Coming Soon)</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Newsletter Section -->
+  <section class="section-pad" style="background:var(--primary-red);color:white;text-align:center;">
+    <div class="container" data-animate>
+      <h2 style="font-size:var(--text-3xl);color:white;margin-bottom:16px;">Get Weekly Deals Straight to Your Phone</h2>
+      <p style="font-size:18px;opacity:0.9;max-width:600px;margin:0 auto 32px auto;">Exclusive offers, new menu items, and insider updates. Plus: Free Large Fries when you subscribe.</p>
+      <div class="card" style="max-width:500px;margin:0 auto;padding:24px;color:var(--text-black);">
+        <div style="display:flex;gap:8px;">
+          <input type="email" class="input-field" placeholder="Your email address">
+          <button class="btn btn--primary">Subscribe</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="app-download-band">
+      <div class="container" style="display:flex;align-items:center;justify-content:space-between;flex-wrap:wrap;gap:16px;">
+        <h3 style="font-size:20px;color:white;margin:0;">Download the McDonald's App</h3>
+        <div>
+          <button class="btn btn--outline" style="color:white;border-color:white;">🍎 App Store</button>
+          <button class="btn btn--outline" style="color:white;border-color:white;margin-left:8px;">▶ Google Play</button>
+        </div>
+      </div>
+    </div>
+    <div class="container footer-grid" data-animate>
+      <div class="footer-col">
+        <h4 style="color:var(--primary-red);font-size:20px;">McDonald's</h4>
+        <p style="font-style:italic;color:var(--text-muted);margin-bottom:16px;">I'm Lovin' It</p>
+        <p style="font-size:12px;color:var(--text-muted);">Follow us on social</p>
+      </div>
+      <div class="footer-col">
+        <h4>ORDER</h4>
+        <ul>
+          <li><a href="#">Order Now</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="#">Delivery</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>LOCATION</h4>
+        <ul>
+          <li><a href="#">Find a Restaurant</a></li>
+          <li><a href="#">Hours & Services</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>COMPANY</h4>
+        <ul>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Careers</a></li>
+          <li><a href="#">News</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>LEGAL</h4>
+        <ul>
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div class="container" style="display:flex;justify-content:space-between;">
+        <span>© 2026 McDonald's Corporation. All rights reserved.</span>
+        <div><a href="#" style="color:white;margin-left:16px;">Privacy</a><a href="#" style="color:white;margin-left:16px;">Terms</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <div id="cookie-banner" class="cookie-banner">
+    <p style="margin:0;">We use cookies to give you the best experience. See our Cookie Policy</p>
+    <div style="display:flex;gap:16px;">
+      <button class="btn btn--ghost" style="color:white;border:1px solid white;">Manage</button>
+      <button class="btn btn--primary" id="accept-cookies">Accept All</button>
+    </div>
+  </div>
+
+  <script type="module" src="/src/main.ts"></script>
+</body>
+</html>

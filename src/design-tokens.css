@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Rubik:wght@400;500;600;700;800;900&display=swap');
+
+:root {
+  /* COLOURS */
+  --primary-red: #DC143C;
+  --red-hover: #B71C3A;
+  --red-light: #E55A54;
+  --red-pale: #F5DEDD;
+  
+  --golden-yellow: #FFC72C;
+  --yellow-hover: #F0B800;
+  --yellow-pale: #FFF8E7;
+  
+  --action-blue: #0066CC;
+  --blue-hover: #0052A3;
+  --blue-light: #E6F2FF;
+  
+  --success-green: #27AE60;
+  --green-light: #D5F0E4;
+  
+  --text-black: #1A1A1A;
+  --text-grey: #4A4A4A;
+  --text-muted: #999999;
+  --text-light: #FFFFFF;
+  
+  --bg-white: #FFFFFF;
+  --bg-light-grey: #F9F9F9;
+  --bg-card-grey: #F5F5F5;
+  
+  --accent-orange: #FF8C00;
+  --neutral-dark: #333333;
+  --social-gold: #FFD700;
+  
+  --gradient-red-yellow: linear-gradient(135deg, var(--primary-red), var(--golden-yellow));
+  --gradient-white-grey: linear-gradient(180deg, var(--bg-white), var(--bg-light-grey));
+
+  /* TYPOGRAPHY */
+  --font-display: 'Rubik', sans-serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  --text-xs: clamp(12px, 1vw, 14px);
+  --text-sm: clamp(14px, 1.2vw, 16px);
+  --text-base: clamp(16px, 1.5vw, 18px);
+  --text-lg: clamp(20px, 2vw, 24px);
+  --text-xl: clamp(28px, 2.5vw, 36px);
+  --text-2xl: clamp(36px, 3vw, 48px);
+  --text-3xl: clamp(48px, 4vw, 64px);
+  --text-4xl: clamp(64px, 5vw, 88px);
+  --text-5xl: clamp(80px, 6vw, 110px);
+
+  --line-tight: 1.1;
+  --line-snug: 1.3;
+  --line-normal: 1.6;
+  --line-relaxed: 1.8;
+  --line-loose: 2;
+
+  --tracking-tight: -0.015em;
+  --tracking-normal: 0;
+  --tracking-wide: 0.03em;
+  --tracking-wider: 0.08em;
+
+  /* SPACING */
+  --space-1: 4px;
+  --space-2: 8px;
+  --space-3: 12px;
+  --space-4: 16px;
+  --space-5: 20px;
+  --space-6: 24px;
+  --space-8: 32px;
+  --space-10: 40px;
+  --space-12: 48px;
+  --space-16: 64px;
+  --space-20: 80px;
+  --space-24: 96px;
+  
+  --section-sm: 48px;
+  --section-md: 80px;
+  --section-lg: 120px;
+
+  /* MOTION */
+  --ease-spring: cubic-bezier(0.34, 1.56, 0.64, 1);
+  --ease-smooth: cubic-bezier(0.4, 0, 0.2, 1);
+  --ease-snap: cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  --ease-bounce: cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  
+  --dur-instant: 80ms;
+  --dur-fast: 180ms;
+  --dur-base: 300ms;
+  --dur-slow: 550ms;
+
+  /* BORDERS */
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-pill: 9999px;
+
+  /* SHADOWS (warm-tinted) */
+  --shadow-xs: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+  --shadow-md: 0 10px 15px -3px rgba(0, 0, 0, 0.08), 0 4px 6px -2px rgba(0, 0, 0, 0.04);
+  --shadow-lg: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+  --shadow-xl: 0 25px 50px -12px rgba(0, 0, 0, 0.15);
+
+  /* BREAKPOINTS (conceptual, mostly used in media queries) */
+  --bp-xs: 375px;
+  --bp-sm: 480px;
+  --bp-md: 768px;
+  --bp-lg: 1024px;
+  --bp-xl: 1280px;
+  --bp-2xl: 1440px;
+}

@@ -1,0 +1,8 @@
+{
+  "name": "McDonald's Ordering App",
+  "description": "High-converting fast food website with menu, ordering flow, and store locator.",
+  "requestFramePermissions": [
+    "geolocation"
+  ],
+  "majorCapabilities": []
+}
