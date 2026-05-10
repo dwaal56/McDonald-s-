@@ -6,7 +6,7 @@
 
 This contains everything you need to run your app locally.
 
-View your app in AI Studio: https://ai.studio/apps/56d0ce7f-6bdd-43a0-a87c-8b889a429861
+View your app in Vercel.app: https://mc-donald-s-two.vercel.app/
 
 ## Run Locally
 
